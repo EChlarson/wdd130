@@ -35,6 +35,7 @@ header {
 
 p {
     padding: 25px;
+    color: var(--primary-color);
 }
 
 nav {
@@ -70,7 +71,17 @@ nav a:hover {
     height: auto;
 }
 
+article {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 255, 255, 0.9);
+}
+
 .hero article img {
     float: right;
-    background-color: #93C2CC;
+    width: 100px;
 }
+
