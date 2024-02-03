@@ -17,20 +17,13 @@
     --nav-hover-background-color: #415C4F;
 }
 
-body {
-    font-family: var(--paragraph-font);
-    max-width: 960px;
-    padding: 20px;
-}
-
 h1,h2,h3,h4,h5,h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
 }
 
-header {
-    padding: 20px;
-    background-color: var(--accent1-color);
+h2 {
+    text-align: center;
 }
 
 p {
@@ -38,14 +31,37 @@ p {
     color: var(--primary-color);
 }
 
+body {
+    font-family: var(--paragraph-font);
+    max-width: 960px;
+    padding: 20px;
+}
+
+/*Header*/
+header {
+    padding: 20px;
+    background-color: var(--accent1-color);
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
+.logo-box img {
+    max-width: 80px;
+    height: auto;
+}
+
 nav {
-    background-color: var(--nav-background-color);
     font-size: 1.2rem;
     display: flex;
+    justify-items: center;
+    align-items: center;
+    grid-column: 2/3;
+
 }
 
 nav a {
     display: block;
+    background-color: var(--nav-background-color);
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
@@ -60,28 +76,71 @@ nav a:hover {
     background-color: var(--nav-hover-background-color);
 }
 
-/* Page Specific CSS */
+/* Hero */
 .hero {
-    position: relative;
+    display: flex;
 }
 
 .hero img {
-    display: block;
+    position: relative;
     width: 100%;
     height: auto;
 }
 
-article {
+/* article {
     width: 100%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(255, 255, 255, 0.9);
-}
+}*/
 
 .hero article img {
     float: right;
     width: 100px;
 }
 
+/* History Section */
+.history {
+    display: grid;
+    grid-template-columns: 33% 34% 33% ;
+    grid-template-rows: 30% 50%;
+    justify-items: center;
+    align-items: center;
+}
+
+.history h2 {
+    order: 0;
+    grid-column: 2/3;
+}
+
+.history p {
+    order: 1;
+    grid-column: 1/4;
+}
+
+/* Adventure Section */
+.gallery {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20% 20%;
+    justify-items: center;
+    align-items: center;
+}
+
+.gallery img {
+    max-width: 150px;
+}
+
+/* Footer */
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+footer a img{
+    max-width: 40px;
+}
+
+/* Last Updated 02/3/24 */
