@@ -1,5 +1,5 @@
 /* General CSS for Site */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
 
 :root {
     --primary-color: #252F33;
@@ -41,41 +41,41 @@ header {
     padding: 20px;
     background-color: var(--accent1-color);
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 200px auto;
 }
 
-.logo-box img {
+.logo-box {
     max-width: 80px;
     height: auto;
 }
 
-nav {
+.heading-nav {
     font-size: 1.2rem;
     display: flex;
     justify-content: space-evenly;
+    background-color: var(--nav-background-color);
     grid-column: 2/3;
     }
 
-nav a {
+.heading-nav a {
     display: block;
-    background-color: var(--nav-background-color);
     color: var(--nav-link-color);
     text-decoration: none;
     padding: 1rem;
 }
 
-nav a:link, nav a:visited {
+.heading-nav a:link, nav a:visited {
     color: var(--nav-link-color);
 }
 
-nav a:hover {
+.heading-nav a:hover {
     color: var(--nav-hover-link-color);
     background-color: var(--nav-hover-background-color);
 }
 
 /* Hero */
 .hero {
-    display: flex;
+    position: relative;
 }
 
 .hero h1 {
@@ -108,10 +108,8 @@ nav a:hover {
 /* History Section */
 .history {
     display: grid;
-    grid-template-columns: 33% 34% 33% ;
-    grid-template-rows: 30% 50%;
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-evenly;
 }
 
 .history h2 {
@@ -127,17 +125,26 @@ nav a:hover {
 /* Adventure Section */
 .gallery {
     display: grid;
-    grid-template-columns: 20% 20% 20% 20% 20%;
-    justify-items: center;
-    align-items: center;
+    grid-template-columns: repeat(5, 1fr);
 }
 
 .gallery img {
-    max-width: 150px;
-}
+    width: 100%;
+    height: auto;
+} 
 
 /* Footer */
 footer {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-content: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+.social-links {
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -147,4 +154,4 @@ footer a img{
     max-width: 40px;
 }
 
-/* Last Updated 02/3/24 */
+/* Last Updated 02/6/24 */
