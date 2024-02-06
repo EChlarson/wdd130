@@ -1,6 +1,5 @@
 /* General CSS for Site */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;400&family=Source+Sans+3:wght@200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap')
 
 :root {
     --primary-color: #252F33;
@@ -53,11 +52,9 @@ header {
 nav {
     font-size: 1.2rem;
     display: flex;
-    justify-items: center;
-    align-items: center;
+    justify-content: space-evenly;
     grid-column: 2/3;
-
-}
+    }
 
 nav a {
     display: block;
@@ -81,20 +78,27 @@ nav a:hover {
     display: flex;
 }
 
+.hero h1 {
+    position: absolute
+    /* top
+    background-color
+    opacity
+    text-align */
+}
+
 .hero img {
     position: relative;
     width: 100%;
     height: auto;
 }
 
-/* article {
-    width: 100%;
+.hero article {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    /* Right */
     background-color: rgb(255, 255, 255, 0.9);
-}*/
+}
 
 .hero article img {
     float: right;
