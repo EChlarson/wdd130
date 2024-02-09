@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,300&family=Shadows+Into+Light&display=swap');
+
+/* General CSS for Page */
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #2E343F;
+    --secondary-color: #58B7D5;
+    --accent-1: #4F5357;
+    --accent-2: #f2f2f2;
+    
+    --heading-font: 'Shadows Into Light', cursive;
+    --general-font: 'Nunito Sans', sans-serif;
+}
+
+body {
+    font-family: var(--general-font);
+    font-size: medium;
+    color: var(--accent-2);
+    background-color: var(--primary-color);
+}
+
+/* Header */
+header {
+    margin: auto;
+    padding: 0.5rem;
+    max-width: 500px;  
+}
+
+h1 {
+    font-family: var(--heading-font);
+    font-size: xx-large;
+    font-weight: 100;
+    color: var(--secondary-color);
+    text-align: center;
+}
+
+/* Form */
+form {
+    max-width: 500px;
+    padding: 1rem;
+    border: 3px solid var(--secondary-color);
+    border-radius: 0.5rem;
+    background-color: var(--accent-1);
+    display: grid;
+}
+
+fieldset {
+    display: grid;
+    grid-gap: 0.5rem;
+    margin: 1rem;
+    border: 3px solid var(--secondary-color);
+    border-radius: 0.5rem;
+    padding: 1rem;
+}
+
+legend {
+    padding: 0.5rem;
+    color: var(--secondary-color);
+    font-size: x-large;
+    font-weight: 600;
+}
+
+.form-item label {
+    margin: 0;
+    text-align: right;
+    padding-right: 1rem;
+}
+
+input, select, textarea {
+    padding: 0.5rem;
+    font-size: large;
+}
+
+input[type="checkbox"] {
+    margin: 0;
+    width: 22px;
+    height: 22px;
+    vertical-align: bottom;
+}
+
+button {
+    margin: 0.5rem;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: large;
+}
+
+button:hover {
+    background-color: var(--accent-2);
+}
+
+.form-item {
+    display: grid;
+    align-items: center;
+}
+
+.column1 {
+    grid-template-columns: 3fr 1fr;
+    margin: 0.5rem 0;
+}
+
+.column2 {
+    grid-template-columns: 1fr 2fr;
+}
+
+/* Footer */
+footer {
+    margin: 1rem auto 0;
+    width: 650px;
+    text-align: center;
+    font-size: small;
+    color: var(--accent-2);
+    border-top: 1px solid var(--secondary-color);
+}
