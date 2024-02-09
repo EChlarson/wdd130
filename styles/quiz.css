@@ -20,73 +20,68 @@
 body {
     font-family: var(--general-font);
     font-size: medium;
-    color: var(--accent-2);
-    background-color: var(--primary-color);
+    color: var(--primary-color);
+    background-color: white;
 }
 
 /* Header */
 header {
     margin: auto;
     padding: 0.5rem;
-    max-width: 500px;  
+    max-width: 600px;
 }
 
 h1 {
     font-family: var(--heading-font);
-    font-size: xx-large;
+    font-size: 3em;
     font-weight: 100;
-    color: var(--secondary-color);
+    color: var(--primary-color);
     text-align: center;
 }
 
 /* Form */
 form {
     max-width: 500px;
-    padding: 1rem;
-    border: 3px solid var(--secondary-color);
+    padding: 0.5rem;
+    border: 3px solid var(--primary-color);
     border-radius: 0.5rem;
-    background-color: var(--accent-1);
+    background-color: var(--accent-2);
     display: grid;
 }
 
 fieldset {
+    border: none;
     display: grid;
     grid-gap: 0.5rem;
     margin: 1rem;
-    border: 3px solid var(--secondary-color);
-    border-radius: 0.5rem;
     padding: 1rem;
 }
 
-legend {
+.form-item {
+    margin: 0;
     padding: 0.5rem;
-    color: var(--secondary-color);
-    font-size: x-large;
-    font-weight: 600;
+    display: grid;
+    align-items: center;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 0.5rem;
 }
 
 .form-item label {
     margin: 0;
-    text-align: right;
-    padding-right: 1rem;
 }
 
-input, select, textarea {
-    padding: 0.5rem;
+.form-item label b {
+    font-weight: 900;
     font-size: large;
-}
-
-input[type="checkbox"] {
-    margin: 0;
-    width: 22px;
-    height: 22px;
-    vertical-align: bottom;
 }
 
 button {
     margin: 0.5rem;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--accent-2);
     border: none;
     border-radius: 0.5rem;
     padding: 0.75rem;
@@ -94,31 +89,15 @@ button {
 }
 
 button:hover {
-    background-color: var(--accent-2);
-}
-
-.form-item {
-    display: grid;
-    align-items: center;
-}
-
-.column1 {
-    grid-template-columns: 3fr 1fr;
-    margin: 0.5rem 0;
-}
-
-.column2 {
-    grid-template-columns: 1fr 2fr;
+    background-color: var(--secondary-color);
 }
 
 /* Footer */
 footer {
     margin: 1rem auto 0;
-    width: 650px;
     text-align: center;
     font-size: small;
-    color: var(--accent-2);
-    border-top: 1px solid var(--secondary-color);
+    color: var(--accent-1);
 }
 
 /* Last Edited 02/08/2024 */
