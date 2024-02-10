@@ -133,6 +133,72 @@ header {
     height: auto;
 } 
 
+/* Contact Section */
+.row1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 1rem;
+}
+
+.company-information p {
+    padding: 0;
+}
+
+fieldset {
+    border: 2px solid var(--nav-background-color);
+    border-radius: 0.25rem;
+}
+
+.form-item {
+    display: grid;
+    padding: 0.5rem;
+}
+
+.radio {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: right;
+}
+
+.check {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+button {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: auto;
+    background-color: var(--accent1-color);
+    color: var(--primary-color);
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0.75rem;
+    font-size: large;
+}
+
+button:hover {
+    background-color: var(--nav-hover-background-color);
+    color: white;
+}
+
+/* Staff Bio */
+.employee-profile {
+    background-color: var(--accent1-color);
+    padding: 0.5rem;
+}
+
+.profile-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.profile-gallery img {
+    width: 100%;
+    height: auto;
+    border: 4px solid var(--primary-color);
+} 
+
 /* Footer */
 footer {
     display: grid;
@@ -154,4 +220,4 @@ footer a img{
     max-width: 40px;
 }
 
-/* Last Updated 02/6/24 */
+/* Last Updated 02/9/24 */

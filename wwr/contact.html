@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page is a conact page for the website I am 
+    developing as part of my course work for WDD 130 this semester. (Winter 2024)">
+    <meta name="author" content="Elizabeth Chlarson">
+    <title>Elizabeth Chlarson | WDD 130 | Contact Us</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+<body>
+    <header>
+        <img class="logo-box" src="images/logo.png" alt="logo">
+        <nav class="heading-nav">
+            <a href="index.html">Index</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section class="row1">
+            <div class="company-information">
+                <p>Contact us by phone at:<br>
+                    (888)123-4567</p>
+                <p>Send us an Email at:<br>
+                    mountainnamerafting@company.com</p>
+                <p>Mountain Name Rafting<br>
+                    123 Hartford Rd<br>
+                    Hartford, TN 37753</p>
+                <div class="google-map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d12941.860036190577!2d-83.15984565868253!3d35.81306509068845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1swhite%20water%20rafting%20tn!5e0!3m2!1sen!2sus!4v1707540049939!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <form>
+                <fieldset>
+                    <div class="form-item">
+                        <label for="user-name">First and Last Name</label>
+                        <input type="text" id="user-name" name="user-name">
+                    </div>
+                    <div class="form-item">
+                        <label for="email">E-Mail</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-item radio">
+                        <label for="gen">General Inquiry</label>
+                        <input type="radio" id="gen" name="gen">
+                        <label for="res">Reservation Question</label>
+                        <input type="radio" id="res" name="res">
+                        <lable for="sug">Website Suggestion</lable>
+                        <input type="radio" id="sug" name="sug">
+                    </div>
+                    <div class="form-item">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="11" placeholder="Type message here..."></textarea>
+                    </div>
+                    <div class="form-item check">
+                        <label for="checkbox">Please subscribe me to the monthly newsletter</label>
+                        <input type="checkbox" id="checkbox" name="checkbox">
+                    </div>
+                    <button type="submit">Submit</button>
+                </fieldset>
+            </form>
+        </section>
+        <section class="employee-profile">
+            <h2>Meet Our Staff!</h2>
+            <div class="profile-gallery">
+                <figure>
+                    <img src="images/andrea-profile-image.jpg" alt="white water rafting">
+                    <figcaption>Andrea North</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/david-profile-image.jpg" alt="white water rafting">
+                    <figcaption>David James</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/jenny-profile-image.jpg" alt="white water rafting">
+                    <figcaption>Jenny Smith</figcaption>
+                </figure>
+            </div>
+        </section>        
+    </main>
+    <footer>
+        <p>©2024 | Mountain Name Rafting | Elizabeth Chlarson | WDD 130</p>
+        <nav class="social-links">
+            <a href="https://www.facebook.com/">
+            <img src="images/facebook-icon.png" alt="Facebook"></a>
+            <a href="https://www.instagram.com/">
+            <img src="images/instagram-icon.png" alt="Instagram"></a>
+            <a href="https://www.tiktok.com">
+            <img src="images/tiktok-icon.png" alt="TikToc"></a>
+        </nav>
+    </footer>   
+</body>
+<!--Last Updated 02/9/24-->
+</html>
