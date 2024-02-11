@@ -108,18 +108,18 @@ header {
 /* History Section */
 .history {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: space-evenly;
-}
-
-.history h2 {
-    order: 0;
-    grid-column: 2/3;
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+    align-content: center;
 }
 
 .history p {
-    order: 1;
-    grid-column: 1/4;
+    margin: 0;
+    padding: 0px 30px 0px 30px;
+    text-align: justify;
+}
+
+.history img {
+    max-width: 100%;
 }
 
 /* Adventure Section */
@@ -131,7 +131,12 @@ header {
 .gallery img {
     width: 100%;
     height: auto;
-} 
+}
+
+#sec2 {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
 
 /* Contact Section */
 .row1 {
