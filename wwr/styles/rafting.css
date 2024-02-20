@@ -16,7 +16,7 @@
     --nav-hover-background-color: #415C4F;
 }
 
-* {
+*, *:before, *:after {
     box-sizing: border-box;
 }
 
@@ -305,4 +305,20 @@ caption {
     color:#252F33;
 }
 
-/* Last Updated 02/19/24 */
+/* index */
+.center {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 4rem 0 4rem 0;
+}
+
+.choose {
+    text-align: center;
+}
+
+.choose button {
+    margin-top: 1rem;
+    width: 15rem;
+}
+
+/* Last Updated 02/20/24 */
