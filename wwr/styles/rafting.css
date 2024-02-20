@@ -16,6 +16,14 @@
     --nav-hover-background-color: #415C4F;
 }
 
+* {
+    box-sizing: border-box;
+}
+
+header, body, footer {
+    margin: 0 auto;
+}
+
 h1,h2,h3,h4,h5,h6 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -32,7 +40,7 @@ p {
 
 body {
     font-family: var(--paragraph-font);
-    max-width: 960px;
+    max-width: 1000px;
     padding: 20px;
 }
 
@@ -42,6 +50,7 @@ header {
     background-color: var(--accent1-color);
     display: grid;
     grid-template-columns: 200px auto;
+    align-items: center;
 }
 
 .logo-box {
@@ -103,18 +112,33 @@ footer a img{
     width: 100%;
 }
 
+.hero h1 {
+    margin: 1rem 0 0 1rem;
+}
+
 .hero article {
     position: absolute;
     margin: 1rem;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgb(255, 255, 255, 0.9);
+    top: 3rem;
+    left: 1rem;
+    right: 1rem;
+    background-color: rgb(255, 255, 255, 0.7);
 }
 
 .hero article img {
     float: right;
     width: 100px;
+    margin: 10px;
+}
+
+.hero article button {
+    margin-bottom: 30px;
+}
+
+.hero article p {
+    text-align: center;
+    margin: 0;
+    padding: 1rem;
 }
 
 /* History Section */
